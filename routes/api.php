@@ -20,3 +20,5 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::get('patients/{patient}', [PatientController::class, 'show']);
     Route::patch('patients/{patient}', [PatientController::class, 'update']);
 });
+
+//Route::apiResource('patients', \App\Http\Controllers\PatientController::class)->only(['index', 'store', 'show', 'update']);
